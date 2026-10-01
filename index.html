@@ -6,9 +6,19 @@
   <title>United for Democracy — Coming Soon</title>
   <meta name="description" content="United for Democracy is preparing its next chapter. A national campaign is planned for early 2027. Please check back soon at unitedfordemocracy.us.">
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#0047AB">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230047AB'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#0D4DFF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230D4DFF'/%3E%3C/svg%3E">
   <style>
+    :root {
+      --blue: #0D4DFF;
+      --white: #fff;
+      --muted: rgba(255, 255, 255, 0.72);
+      --soft: rgba(255, 255, 255, 0.55);
+      --serif: "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, "Times New Roman", serif;
+      --sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
     *, *::before, *::after { box-sizing: border-box; }
 
     html, body {
@@ -21,11 +31,11 @@
       min-height: 100dvh;
       display: flex;
       flex-direction: column;
-      background: #0047AB;
-      color: #fff;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      background: var(--blue);
+      color: var(--white);
+      font-family: var(--sans);
       font-size: 1.125rem;
-      line-height: 1.55;
+      line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -35,12 +45,12 @@
       flex-direction: column;
       width: min(36rem, calc(100% - 3rem));
       margin: 0 auto;
-      padding: 2rem 0;
+      padding: 2.25rem 0;
     }
 
     header {
       font-size: 0.9375rem;
-      font-weight: 600;
+      font-weight: 500;
     }
 
     header a {
@@ -53,61 +63,102 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 3rem 0;
+      padding: 4rem 0;
     }
 
     .status {
-      margin: 0 0 1rem;
-      font-size: 0.9375rem;
+      margin: 0 0 1.15rem;
+      color: var(--soft);
+      font-size: 0.875rem;
       font-weight: 500;
     }
 
     h1 {
-      margin: 0 0 1.5rem;
-      font-size: clamp(2.5rem, 8vw, 3.75rem);
-      font-weight: 700;
+      margin: 0 0 1.75rem;
+      font-family: var(--serif);
+      font-size: clamp(2.75rem, 9vw, 4.25rem);
+      font-weight: 500;
       line-height: 1.05;
-      letter-spacing: -0.03em;
+      letter-spacing: -0.02em;
     }
 
-    p {
-      margin: 0 0 1.1rem;
+    .copy {
+      margin: 0 0 1.15rem;
       max-width: 34rem;
+      color: var(--muted);
     }
 
-    main p:last-child { margin-bottom: 0; }
+    .copy:last-child { margin-bottom: 0; }
+
+    .cue {
+      margin: 2rem 0 0;
+      color: var(--soft);
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
 
     footer {
-      font-size: 0.875rem;
+      color: var(--soft);
+      font-size: 0.8125rem;
     }
 
     footer p { margin: 0; }
 
+    @keyframes fade-up {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade {
+      animation: fade-up 0.85s var(--ease) both;
+    }
+
+    .fade-wordmark { animation-delay: 0.06s; }
+    .fade-headline { animation-delay: 0.2s; }
+    .fade-body { animation-delay: 0.36s; }
+    .fade-cue { animation-delay: 0.52s; }
+
     @media (min-width: 720px) {
       .page {
-        width: min(38rem, calc(100% - 5rem));
-        padding: 2.5rem 0;
+        width: min(38rem, calc(100% - 5.5rem));
+        padding: 2.75rem 0;
       }
 
       body { font-size: 1.1875rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .fade {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
     }
   </style>
 </head>
 <body>
   <div class="page">
-    <header>
+    <header class="fade fade-wordmark">
       <a href="https://unitedfordemocracy.us">United for Democracy</a>
     </header>
 
     <main>
-      <p class="status">Coming soon</p>
-      <h1>The next chapter</h1>
-      <p>We are taking stock of what this moment demands — and how this work can best serve the country.</p>
-      <p>Building on years of work around the courts, United for Democracy is becoming a broader center of gravity for reforming the political system so democracy delivers for working people.</p>
-      <p>A national campaign is planned for early 2027. We are grateful for the partners and supporters who have brought us this far. Please check back soon.</p>
+      <p class="status fade fade-headline">Coming soon</p>
+      <h1 class="fade fade-headline">The next chapter</h1>
+      <div class="fade fade-body">
+        <p class="copy">Building on years of work around the courts, United for Democracy is becoming a broader center of gravity for reforming the political system so democracy delivers for working people.</p>
+        <p class="copy">A national campaign is planned for early 2027. We are grateful for the partners and supporters who have brought us this far. Please check back soon.</p>
+      </div>
+      <p class="cue fade fade-cue">Coming 2027</p>
     </main>
 
-    <footer>
+    <footer class="fade fade-cue">
       <p>unitedfordemocracy.us</p>
     </footer>
   </div>

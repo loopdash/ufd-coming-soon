@@ -19,7 +19,7 @@ GitHub Pages is served from **`main` / repository root** (`/`), not `/docs`.
 
 ## Design
 
-Stark blue field (`#0047AB`) and white type. No logo, gradients, or decorative chrome. Replace when brand assets arrive.
+Vibrant royal/cobalt field (`#0D4DFF`) and white type, with muted soft-white body. Serif headline, sans body. CSS-only staggered fade-in; no motion when `prefers-reduced-motion` is set. No logo, gradients, or decorative chrome. Replace when brand assets arrive.
 
 ## Notes
 
