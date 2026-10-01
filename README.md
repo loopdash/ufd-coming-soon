@@ -17,12 +17,9 @@ GitHub Pages is served from **`main` / repository root** (`/`), not `/docs`.
 | `index.html` | Self-contained splash (inline CSS, no JavaScript, no external assets) |
 | `.nojekyll` | Tells GitHub Pages to skip Jekyll processing |
 
-## Placeholders
+## Design
 
-No official logo or brand system is checked in. Temporary stand-ins:
-
-- **Wordmark:** system serif + a simple “U” mark (inline SVG), not the real logo
-- **Colors:** deep navy/indigo field with purple accents borrowed from the current public site (`#4721fb`, `#7a00df`, lightened to `#c4b5fd` for contrast). Replace when brand assets arrive.
+Stark blue field (`#0047AB`) and white type. No logo, gradients, or decorative chrome. Replace when brand assets arrive.
 
 ## Notes
 
