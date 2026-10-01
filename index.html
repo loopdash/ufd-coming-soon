@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>United for Democracy — Coming Soon</title>
+  <meta name="description" content="United for Democracy is preparing its next chapter. A national campaign is planned for early 2027. Please check back soon at unitedfordemocracy.us.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b1220'/%3E%3Cpath d='M8 22V10h3.2l4.8 8.4L20.8 10H24v12h-2.6v-8.2L17.1 22h-2.2l-4.3-8.2V22H8z' fill='%23c4b5fd'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy: #0b1220;
+      --navy-mid: #121a2e;
+      --ink: #f3f0e8;
+      --muted: #c5c0b4;
+      --accent: #c4b5fd;
+      --accent-deep: #7a00df;
+      --accent-mid: #4721fb;
+      --line: rgba(196, 181, 253, 0.28);
+      --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+      --sans: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 640px at 80% -10%, rgba(71, 33, 251, 0.28), transparent 55%),
+        radial-gradient(900px 520px at 0% 110%, rgba(122, 0, 223, 0.22), transparent 50%),
+        linear-gradient(180deg, var(--navy) 0%, var(--navy-mid) 100%);
+      font-family: var(--sans);
+      font-size: 1.0625rem;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .frame {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      width: min(40rem, calc(100% - 2.5rem));
+      margin: 0 auto;
+      padding: 1.75rem 0 1.5rem;
+    }
+
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .mark {
+      flex: 0 0 auto;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    .wordmark-text {
+      font-family: var(--serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3.5rem 0 2.75rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 0.85rem;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-family: var(--serif);
+      font-size: clamp(2.35rem, 8vw, 3.65rem);
+      font-weight: 600;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .lede,
+    .copy {
+      margin: 0 0 1.15rem;
+      max-width: 38rem;
+      color: var(--muted);
+    }
+
+    .lede { color: var(--ink); }
+
+    .cue {
+      display: inline-block;
+      margin-top: 1.15rem;
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    footer p { margin: 0; }
+
+    footer strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    @media (min-width: 720px) {
+      .frame {
+        width: min(44rem, calc(100% - 4rem));
+        padding-top: 2.25rem;
+      }
+
+      body { font-size: 1.125rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        scroll-behavior: auto !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <a class="wordmark" href="https://unitedfordemocracy.us">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+          <rect width="32" height="32" rx="6" fill="#1b1638"/>
+          <path d="M8 22V10h3.2l4.8 8.4L20.8 10H24v12h-2.6v-8.2L17.1 22h-2.2l-4.3-8.2V22H8z" fill="#c4b5fd"/>
+        </svg>
+        <span class="wordmark-text">United for Democracy</span>
+      </a>
+    </header>
+
+    <main>
+      <p class="eyebrow">Coming soon</p>
+      <h1>The next chapter</h1>
+      <p class="lede">We are taking stock of what this moment demands — and how this work can best serve the country.</p>
+      <p class="copy">Building on years of work around the courts, United for Democracy is becoming a broader center of gravity for reforming the political system so democracy delivers for working people.</p>
+      <p class="copy">A national campaign is planned for early 2027. We are grateful for the partners and supporters who have brought us this far. Please check back soon.</p>
+      <p class="cue">Coming 2027</p>
+    </main>
+
+    <footer>
+      <p><strong>United for Democracy</strong> · unitedfordemocracy.us</p>
+    </footer>
+  </div>
+</body>
+</html>
