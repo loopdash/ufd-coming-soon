@@ -1,6 +1,6 @@
 # unitedfordemocracy.us — Coming Soon
 
-Static, public Coming Soon splash for **United for Democracy** while the site is being updated.
+Static, public Coming Soon splash for **United for Democracy** while the next chapter is prepared.
 
 ## Preview
 
